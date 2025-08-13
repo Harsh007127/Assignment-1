@@ -16,6 +16,17 @@ print(f"Addition: {addition}")
 print(f"Subtraction: {subtraction}")
 print(f"Multiplication: {multiplication}")
 print(f"Division: {division}")
+output
+if you run this and enter
+
+Enter the first number: 5
+Enter the second number: 10
+
+--- Results ---
+5.0 + 10.0 = 15.0
+5.0 - 10.0 = -5.0
+5.0 * 10.0 = 50.0
+5.0 / 10.0 = 0.5
 
 #Task 2: Create a Personalized Greeting
 Assigl# Take user's first name as input
@@ -29,3 +40,12 @@ full_name = first_name + " " + last_name
 
 # Print personalized greeting
 print(f"Hello, {full_name}! Welcome to the Python program.")
+
+output
+if you run this and enter
+Enter your first name: John  
+Enter your last name: Doe
+You'|| get.
+Hello, John Doe! Welcome to the Python program.
+
+
