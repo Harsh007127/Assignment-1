@@ -1,4 +1,6 @@
 # Assignment-1
+ 
+
 # Task 1: Perform Basic Mathematical Operations
 
 # 1. Take two numbers as input from the user
@@ -9,28 +11,27 @@ num2 = float(input("Enter the second number: "))
 addition = num1 + num2
 subtraction = num1 - num2
 multiplication = num1 * num2
-division = num1 / num2 if num2 != 0 else "Undefined (division by zero)"
+
+if num2 != 0:
+    division = num1 / num2
+else:
+    division = None   # None means no valid result
 
 # 3. Display the results
-print(f"Addition: {addition}")
-print(f"Subtraction: {subtraction}")
-print(f"Multiplication: {multiplication}")
-print(f"Division: {division}")
-output
-if you run this and enter
+print("\n--- Results ---")
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+if division is not None:
+    print("Division:", division)
+else:
+    print("Division: Undefined (cannot divide by zero)")
 
-Enter the first number: 5
-Enter the second number: 10
 
---- Results ---
-5.0 + 10.0 = 15.0
-5.0 - 10.0 = -5.0
-5.0 * 10.0 = 50.0
-5.0 / 10.0 = 0.5
+# Task 2: Create a Personalized Greeting
 
-#Task 2: Create a Personalized Greeting
-Assigl# Take user's first name as input
-first_name = input("Enter your first name: ")
+# Take user's first name as input
+first_name = input("\nEnter your first name: ")
 
 # Take user's last name as input
 last_name = input("Enter your last name: ")
@@ -39,13 +40,6 @@ last_name = input("Enter your last name: ")
 full_name = first_name + " " + last_name
 
 # Print personalized greeting
-print(f"Hello, {full_name}! Welcome to the Python program.")
-
-output
-if you run this and enter
-Enter your first name: John  
-Enter your last name: Doe
-You'|| get.
-Hello, John Doe! Welcome to the Python program.
+print(f"\nHello, {full_name}! Welcome to the Python program.")
 
 
